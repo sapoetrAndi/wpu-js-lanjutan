@@ -1,0 +1,1 @@
+// let dan const berfungsi untuk membuat variable. variable yang digunnakan menggunakan let akan menganut block scope bukan lagi function scope sehingga tidak dinakikan (hositing). maka kita disarankan menggunakan let ketika kita membuat variable.
