@@ -31,25 +31,34 @@ let mahasiswa2 = {
 
 // 2. Function Declaration
 //nama function dibuat capital untuk menandakan dia adalah object
-//Problem : dibelakang layar akan di lakukan duplikasi seperti Object Literal
 //dibawah ini adalah blueprint/template/ibarat class
+//Problem : dibelakang layar akan di lakukan duplikasi seperti Object Literal maka dari itu solusinya kita akan menggunakan object.create() seperti dibawah ini.
+
+const methodMahasiswa = {
+    //contoh method di js
+    makan : function(porsi){
+        this.energi += porsi;
+        console.log(`halo ${this.nama}, selamat makan`);
+    },
+
+    main : function(jam){
+        this.energi -= jam;
+        console.log(`halo ${this.nama}, selamat bermain`);
+    },
+
+    tidur : function(jam){
+        this.energi += jam * 2;
+        console.log(`halo ${this.nama}, selamat tidur`);
+    }
+}
+
+// note: prilaku Object.create() mirip seperti pewarisan didalam konsep OOP yaitu untuk menghubungkan/mewarisi properti dan method yang ada pada objek lain
 function Mahasiswa3(nama, energi){
-    let mahasiswa = {};//deklarai untuk membuat object
+    let mahasiswa = Object.create(methodMahasiswa);//deklarai untuk membuat object
 
     //contoh property di js
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
-
-    //contoh method di js
-    mahasiswa.makan = function(){
-        this.energi += porsi;
-        console.log(`halo ${this.nama}, selamat makan`);
-    }
-
-    mahasiswa.main = function(jam){
-        this.energi -= jam;
-        console.log(`halo ${this.nama}, selamat bermain`);
-    }
 
     //wajib return jika kita menggunakan function declaration
     return mahasiswa;
@@ -59,31 +68,4 @@ function Mahasiswa3(nama, energi){
 let andi = Mahasiswa3("andi", 20);
 let alif = Mahasiswa3("alif", 30);
 
-
-
-// 3. Constructor Function
-/* Constructor Function sama seperti function declaration hanya saja kita tidak perlu menuliskan let mahasiswa = {}; & return mahasiswa, karena sudah otomatis dibuatkan. namun kita harus menggunakan  keyword this setiap membuat properti dan method*/
-function Mahasiswa4(nama, energi){
-
-    //contoh property di js
-    this.nama = nama;
-    this.energi = energi;
-
-    //contoh method di js
-    this.makan = function(){
-        this.energi += porsi;
-        console.log(`halo ${this.nama}, selamat makan`);
-    }
-
-    this.main = function(jam){
-        this.energi -= jam;
-        console.log(`halo ${this.nama}, selamat bermain`);
-    }
-
-}
-
-//untuk menginstansiasi constructor function kita wajib menggnaan keyword new karena kalau tida maka akan dianggap funciton declaration
-let sukarno = new Mahasiswa4("sukarno", 1000);
-
-
-// 4. Object.create
+//masih ada cara yang lebih efektif dari cara diatas yaitu dengan menggunakan prototype. untuk lebih detail ada pada pertemuan 1.3
