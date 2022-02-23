@@ -1,0 +1,20 @@
+JAVASCRIPT LANJUTAN | 5.1 Template Literals
+
+
+
+Template Literals
+    adalah string Literals yang memungkinkan adanya expression didalamnya.
+
+
+
+
+setting vscode agar dapat menjalankan emmet di JAVASCRIPT
+- klik CTRL + (,)
+- kemudian ketik includelang
+- klik icon setting kemudian pilih Copy Setting as JSON
+- jika sudah di copy klik edit in setting.JSON
+- kemudian tambahkan di akhir kode berikut:
+"emmet.includeLanguages" : {
+    "javascript" : "html"
+}
+- kemudian save
