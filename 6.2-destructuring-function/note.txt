@@ -1,0 +1,1 @@
+JAVASCRIPT LANJUTAN | 6.2 Destructuring Function
