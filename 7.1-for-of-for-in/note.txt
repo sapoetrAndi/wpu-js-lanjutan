@@ -1,0 +1,12 @@
+JAVASCRIPT LANJUTAN | 7. for..of VS for..in
+
+for of
+    sebuah looping yang bisa menelusuri objek objek yang iterable
+    contoh iterable objek:
+        - String
+        - Array 
+        - Arguments / NodeList
+        - TypedArray
+        - Map
+        - Set
+        - User-defined Iterables

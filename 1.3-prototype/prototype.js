@@ -93,6 +93,9 @@ Mahasiswa4.prototype.tidur = function(jam){
 
 let andiSaputra = new Mahasiswa4("Andi", 10);
 
+console.log(andiSaputra.makan(20));
+console.log(andiSaputra);
+
 
 //versi Class
 // Namun di belakang layar yang di jalankan adalah cersi yang di atas
