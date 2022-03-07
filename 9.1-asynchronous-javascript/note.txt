@@ -1,0 +1,34 @@
+JAVASCRIPT LANJUTAN | 9. Asynchronous Javascript
+
+Javascript is a single-threaded, non-blocking, Asynchronous and concurrent language
+
+* single-threaded yaitu:
+thread (sesuatu yang mnegerjakan sebuah tugas)
+urutan eksekusi kode yang dapat dilakukan secara bebas / independent satu sama lain.
+
+* sedangkan blocking dan non-blocking
+blocking berarti sebuah program akan berjalan jika program yang lain sudah selesai prosesnya. sedangkan non-blocking ketika sebuah proses belum selesai maka kita dapat menjalankan proses berikutnya
+
+* Asynchronous & synchronous
+
+Asynchronous + single-threaded = concurrency
+Asynchronous + multi-threaded = parallelism
+
+
+kesimpulan
+
+# single vs multi threaded
+lingkungan eksekusi "task"
+
+# blocking vs non-blocking
+Teknik 'ngoding' (IO related)
+
+# Asynchronous & synchronous
+Teknik 'ngoding' (Http Request related)
+
+# concurrent vs parallel
+lingkungan eksekusi "task"
+
+
+http://latentflip.com/loupe/
+by. Phillip Roberts
