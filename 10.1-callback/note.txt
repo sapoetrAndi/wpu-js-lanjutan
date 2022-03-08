@@ -1,0 +1,9 @@
+JAVASCRIPT LANJUTAN | 10.1 Callback
+
+"Sebuah function yang dikirimkan sebagai parameter pada function lain."
+atau
+"Sebuah function yang dieksekusi setelah function lain selesai dijalankan"
+
+
+
+note: jika kena error CORS artinya file/project harus dijalankan/disimpan di sbuah web server atau mrnggunakan extension live server
