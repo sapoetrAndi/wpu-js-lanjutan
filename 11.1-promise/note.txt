@@ -1,0 +1,12 @@
+JAVASCRIPT LANJUTAN | 11. Promise
+
+promise adalah sebuah solusi untuk menangani callback hell
+
+Promise adalah sebuah object yang merepresentasikan keberhasilan / kegagalan sebuah event yang asynchrounous dimasa yang akan datang
+
+janji (terpenuhi / ingkar)
+
+di js disebut dengan states(keadaan) (terpenuhi/fulfilled, ingkar/rejected, tunggu/pending).
+untuk menjalankan keadaan diatas ada 3 fungsi callback.
+callback (resolve/janji terpenuhi , reject/janji tidak terpenuhi , finally/waktu tunggu selesai).
+didalam promise ada aksi yang akan di lakukan ketika janji resolve/reject, jika terpenuhi (then) jika tidak (catch)
