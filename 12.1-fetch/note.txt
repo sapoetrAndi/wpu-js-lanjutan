@@ -1,0 +1,45 @@
+JAVASCRIPT LANJUTAN | 12. Fetch
+
+fetch adalah sebuah API pada JS modern yang bertugas untuk mengambil data secara Asynchronous (ajax) 
+
+fetch()
+"Sebuah method pada API javascript untuk mengambil resources dari jaringan, dan mengembalikan promise yang selesai (fullfilled) ketika ada response yang tersedia."
+
+penulisan:
+fetch(resources, init);
+
+resources:
+- url = alamat dari sumber yang akan kita ambil
+- request object = representasi pemintaan sumber
+
+init (optional): 
+konfigurasi tambahan pada sebuah request berbentuk object. contohnya:
+- method
+- headers
+- body
+- mode
+- cache
+- referrer
+- referrerPolicy
+- integrity
+- keepalive
+- signal
+
+response (property):
+- headers
+- ok
+- redirected
+- status
+- statusText
+- type
+- url
+- body
+
+response (property):
+- clone()
+- error()
+- redirected()
+- blob()
+- formData()
+- json()
+- text()
