@@ -1,0 +1,10 @@
+JAVASCRIPT LANJUTAN | 14. Async Await
+
+Asyncronous Function (Async)
+"Sebuah Function yang bekerja secara Asyncronous (melalui event loop), yang menghasilkan (implisit) promise sebagai return valuenya, tapi cara penulisan kodenya menggunakan penulisan yang syncronous (standard)"
+- fungsi yang berjalan secara Asyncronous
+- menghasilkan (implisit) promise
+- cara penulisannya sama seperti syncronous Function (Function biasa)
+
+penjelasan berikutnya
+"Sebuah Async Function dapat memiliki keyword Await di dalamnya untuk memberhentikan sementara eksekusi fungsinya sambil menunggu promisenya selesai"
